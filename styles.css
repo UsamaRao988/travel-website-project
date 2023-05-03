@@ -1,0 +1,39 @@
+body{
+    background-color: lightblue;
+}
+.centered-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 500px;
+}
+*{
+    text-align: center;
+    list-style-position: inside;
+}
+h1{
+    font-family: sans-serif;
+    color: purple;
+    font-size: 60px;
+}
+h2{
+    font-style: oblique;
+    color:deeppink;
+    font-size: 40px;
+}
+#slogan{
+    color: darkorange;
+    font-weight: bolder;
+    font-size: x-large;
+}
+a[href] {
+    color: red;
+    font-size: large;
+}
+q{
+    font-size: x-large;
+    font-weight: bold;
+    color:brown;
+    font-family: calibri;
+}

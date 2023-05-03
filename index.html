@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head class="centered-text">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Discover America</title>
+    </head>
+    <body class="centered-text">
+        <div style="background-color: black; color: white; display: flex; align-items: center; justify-content: center;">
+            <p style="margin-bottom: 0;">
+                <strong>This is a study project of Usama Abdul Moeed</strong>
+            </p>
+        </div>
+        <h1>Welcome to Discover America</h1>
+        <p id="slogan">A World to See</p>
+        <div>
+            <img class="centered-image" src="usa.jpg" alt="Homepage Image">
+        </div>
+        <q>
+            A journey of a thousand miles begins with a single click
+        </q>
+        <div>
+            <h3>About Us</h3>
+            <p>
+                Discover America is the best guide for traveling to the United States of America. Discover all the information you need for your American holidays
+            </p>
+        </div>
+
+        <br>
+        <br>
+
+        <form>
+            <div>
+                <h2>Subscribe to our Newsletter</h2>
+                <p>
+                    Get notified with the latest travelling opportunities
+                </p>
+                <input id="name" type="text" placeholder="Name" name="name">
+                <br>
+                <input id="email" type="text" placeholder="Email address" name="mail">
+                <br>
+                <label>
+                    <input type="checkbox" checked="checked" name="subscribe"> Receive Emails
+                </label>
+                <br>
+                <div>
+                    <input id="submit" type="submit" value="Subscribe">
+                </div>
+            </div>     
+        </form>
+
+        <br>
+        <br>
+
+        <div>
+            <a href="index.html">Homepage</a>
+            <a href="index2.html">Destinations</a>
+            <a href="index3.html">Attractions</a>
+            <a href="index4.html">Vlogs</a>
+        </div>
+
+        <script>
+            let form = document.querySelector("form")
+            let submit = document.querySelector("#submit")
+            let name = document.querySelector("#name")
+            let email = document.querySelector("#email")
+
+            
+            // submit.addEventListener("click", function(event){
+            //     event.preventDefault()
+            //     if(name.value == "" || email.value == ""){
+            //         window.alert("Name and Email are required")
+            //     }
+            //     else{
+            //         window.alert("You have successfully subscribed")
+            //     }
+            // })
+
+            form.addEventListener("submit", function(event){
+                event.preventDefault()
+                if(name.value == "" || email.value == ""){
+                    window.alert("Name and Email are required")
+                }
+                else{
+                    window.alert("You have successfully subscribed")
+                }
+            })
+        </script>    
+    </body>
+</html>
